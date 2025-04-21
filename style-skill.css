@@ -1,0 +1,145 @@
+.skills-section {
+  margin: 80px auto 50px;
+  max-width: none;
+  width: calc(100% - 200px);
+  text-align: center;
+  background-color: #0a0a23;
+  padding: 20px;
+  border-radius: 12px;
+}
+  
+.skills-section h2 {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 38px;
+  letter-spacing: 1px;
+}
+  
+.skills-section .highlight {
+  color: #a259f7;
+}
+  
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.skills-categories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 200px;
+}
+  
+.category-button {
+  background: #33364d;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+  
+.category-button:hover, .category-button.active {
+  background: #6c63ff;
+}
+  
+.tools-and-skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+  
+.tools, .skills {
+  flex: 1;
+  text-align: left;
+}
+  
+.tools h3,.skills h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+  
+.tools ul {
+  list-style: none;
+  padding: 0;
+}
+  
+.tools li {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+  
+.skill-bar {
+  margin-bottom: 15px;
+}
+  
+.skill-name {
+  color: #fff;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+  
+.bar-container {
+  background: #1e1e2d;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+  
+.bar {
+  background: linear-gradient(to right, #a259f7, #6c63ff);
+  height: 100%;
+  border-radius: 5px;
+  width: 0; 
+}
+  
+.skill-percentage {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Estilos adaptados en pantallas pequeñas */
+@media (max-width: 700px) {
+  .skills-section {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .skills-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .category-button {
+    flex-basis: auto;
+  }
+  
+  .tools-and-skills {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .tools, .skills {
+    text-align: center;
+  }
+  
+  .tools ul {
+    padding-left: 20px;
+  }
+}

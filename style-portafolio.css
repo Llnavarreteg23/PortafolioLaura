@@ -1,0 +1,106 @@
+ /* Portfolio Section */
+
+.portfolio-section {
+  margin: 80px auto 50px;
+  max-width: none;
+  width: calc(100% - 200px);
+  margin-left: 100px;
+  text-align: center;
+  background-color: #0a0a23;
+  padding: 10px;
+  border-radius: 12px;
+}
+  
+.portfolio-section h2 {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 38px;
+  letter-spacing: 1px;
+}
+  
+.portfolio-section .Portafolio-title {
+  color: #a259f7;
+}
+  
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+  
+.portfolio-item {
+  background-color: #1e1e2d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+  
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+  
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+  
+.portfolio-item h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 20px;
+  text-align: left;
+}
+  
+.portfolio-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+  
+.portfolio-buttons button {
+  background: #33364d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+  
+.portfolio-buttons button:hover {
+  background: #6c63ff;
+}
+
+/* Estilos adaptados en pantallas pequeñas */
+@media (max-width: 700px) {
+  .portfolio-section {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .portfolio {
+    grid-template-columns: 1fr; 
+  }
+  
+  .portfolio-item {
+    text-align: center; 
+  }
+  
+  .portfolio-item h3 {
+    text-align: center; 
+  }
+  
+  .portfolio-buttons {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+  }
+}
+  

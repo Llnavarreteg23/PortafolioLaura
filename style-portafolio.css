@@ -1,14 +1,11 @@
  /* Portfolio Section */
 
 .portfolio-section {
-  margin: 80px auto 50px;
-  max-width: none;
-  width: calc(100% - 200px);
-  margin-left: 100px;
-  text-align: center;
-  background-color: #0a0a23;
-  padding: 10px;
-  border-radius: 12px;
+  max-width: none; /* Elimina  restricción de ancho máximo */
+    text-align: center;
+    background-color: #0a0a23;
+    padding: 60px;
+    border-radius: 12px;
 }
   
 .portfolio-section h2 {

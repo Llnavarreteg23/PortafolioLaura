@@ -1,0 +1,33 @@
+/*Nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px 24px 40px;
+    font-size: 1.2rem;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+    z-index: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), 
+                        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background: hsl(240, 56%, 9%);
+    color: #fff;
+    
+    
+}
+.nav-left {
+    color: #9a7cff;
+}
+.nav-right a {
+    color: #9a7cff;
+    text-decoration: none;
+    margin-left: 32px;
+    margin-right: 60px; 
+    transition: color 0.2s;
+}
+.nav-right a:hover {
+    color: #6c63ff;
+}

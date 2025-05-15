@@ -22,12 +22,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  
 }
   
 .skills-categories {
   display: flex;
-  gap: 10px;
-  margin-bottom: 200px;
+  gap: 30px;
+  margin-bottom: 80px;
+  
 }
   
 .category-button {
@@ -48,9 +51,19 @@
   
 .tools-and-skills {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: center;
+  gap: -100px;
   width: 100%;
+
+}
+
+.tools{
+  margin-left: 350px;
+}
+
+.skills{
+  margin-right: 300px;
+  margin-left: 100px;
 }
   
 .tools, .skills {
@@ -111,6 +124,7 @@
 }
 
 /* Estilos adaptados en pantallas pequeñas */
+
 @media (max-width: 700px) {
   .skills-section {
     width: calc(100% - 40px);

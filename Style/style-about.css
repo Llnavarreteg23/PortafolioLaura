@@ -4,13 +4,15 @@
     background-color: #0a0a23;
     padding: 60px;
     border-radius: 12px;
+    margin-top: 100px;
 }
 .about-section h2 {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 400;
-    margin-bottom: 38px;
+    margin-bottom: 50px;
     letter-spacing: 1px;
+
 }
 .about-section .highlight {
     color: #a259f7;
@@ -19,21 +21,25 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 300px;
+    gap: 100px;
     flex-wrap: wrap;
+    margin-top: 70px;
 }
 .about-photo img {
-    width: 220px;
-    height: 260px;
+    width: 300px;
+    height: 340px;
     object-fit: cover;
     border-radius: 12px;
     border: 3px solid #3840a8;
     background: #111;
     box-shadow: 0 0 18px #2c2c54;
+    margin-left: 100px;
 }
 .about-info {
     max-width: 400px;
-    text-align: left;
+    text-align: justify;
+    margin-right: 100px;
+    margin-top: 30px;
 }
 .about-info p {
     color: #e0e0e0;

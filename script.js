@@ -1,3 +1,8 @@
+//! Sección de nav
+
+
+
+//! Sección de Home
 //Typing effect (animación de máquina de escribir)
 
 const animacion = ["Desarrolladora Web", "Laura Navarrete"]; 
@@ -10,7 +15,7 @@ const typingElemento = document.getElementById('typing'); //Conexión con HTML (
 const cursor = document.getElementById('cursor'); //Conexión con HTML (id)
 
 function typeRole() {
-    if (typing) { //Escribir
+    if (typing) { 
 
         if (posicion < animacion[indice].length) {
             typingElemento.textContent += animacion[indice][posicion];//Si hay caracteres por escribir
@@ -33,6 +38,41 @@ function typeRole() {
     }
 }
 document.addEventListener("DOMContentLoaded", typeRole);
+
+document.getElementById('btnLeerMas').addEventListener('click', function() {
+    document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+//! Sección de About Me
+
+//*Boton Portafolio
+
+document.getElementById('btnPortafolio').addEventListener('click', function() {
+    document.getElementById('portfolio-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+//* Boton CV
+
+document.getElementById('btnDescargar').addEventListener('click', function() {
+    // Ruta relativa al archivo PDF en tu carpeta de desarrollo
+    const pdfUrl = '/CV/CV-LauraNavarrete.pdf';
+    const fileName = 'CV-LauraNavarrete.pdf'; // nombre con que se guardará
+
+    // Crear enlace temporal
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = fileName;
+
+    // Agregar al DOM, disparar clic y luego remover
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+
+
+
+//!Sección de Herramientas y Habilidades
 
 // Animacion de skillbar
 
@@ -99,3 +139,7 @@ categoryButtons.forEach(button => {
     });
 });
 displaySkills('frontend');
+
+
+
+//! Sección de portafolio

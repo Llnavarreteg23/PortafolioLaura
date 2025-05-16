@@ -1,0 +1,82 @@
+/*Nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px 24px 40px;
+    font-size: 1.2rem;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(24,24,41,0.85) 70%, rgba(100,100,200,0.15) 100%);
+    color: #fff;   
+}
+
+.logo {
+  /* Degradado de fondo */
+    background: linear-gradient(to right, #6a5acd, #8a2be2, #9400d3);
+    color: transparent;
+    
+    /* Aplicar el degradado al texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Necesario para que el texto tome el fondo */
+    -webkit-text-fill-color: transparent;
+
+    /* Fuente y estilo */
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Share Tech Mono', monospace;
+
+    /* Opcional: sombra para destacar */
+    text-shadow: 0 0 5px rgba(138, 43, 226, 0.7);
+}
+
+.nav-left {
+    color: #9a7cff;
+}
+.nav-right a {
+    color: #9a7cff;
+    text-decoration: none;
+    margin-left: 32px;
+    margin-right: 80px; 
+    transition: color 0.2s;
+    gap: -50px;
+}
+.nav-right a:hover {
+    color: #6c63ff;
+}
+
+/* Menu oculto idiomas*/
+
+.lang-menu {
+    position: absolute;
+    right: 40px; /* Ajusta según tu layout */
+    top: 60px;   /* Ajusta según la altura de tu nav */
+    background: #181829;
+    border: 1px solid #8d7aff;
+    border-radius: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+    z-index: 1000;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.lang-menu li a {
+    display: block;
+    padding: 8px 18px;
+    color: #8d7aff;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.lang-menu li a:hover {
+    background: #2d2d4a;
+}

@@ -4,6 +4,7 @@
   background-color: #0a0a23;
   padding: 60px;
   border-radius: 12px;
+  margin-bottom: 30px
 }
   
 .skills-section h2 {
@@ -80,6 +81,7 @@
 .tools ul {
   list-style: none;
   padding: 0;
+  margin-top: 50px;
 }
   
 .tools li {
@@ -89,6 +91,7 @@
 }
   
 .skill-bar {
+  margin-top: 30px;
   margin-bottom: 15px;
 }
   

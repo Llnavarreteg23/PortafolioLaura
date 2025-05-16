@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    position: relative;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 12px;
+}
+
+.footer-icon {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    color: #8d7aff;
+}
+
+.footer-text {
+    color: #bfc9d1;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    text-align: center;
+    user-select: none;
+}
+
+/* Elimina cualquier borde o fondo heredado */
+.footer *, .footer *:before, .footer *:after {
+    box-sizing: inherit;
+    border: none;
+    background: none;
+}
+

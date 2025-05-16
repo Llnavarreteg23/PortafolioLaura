@@ -1,0 +1,26 @@
+  
+//! Sección de About Me
+
+//*Boton Portafolio
+
+document.getElementById('btnPortafolio').addEventListener('click', function() {
+    document.getElementById('portfolio-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+//* Boton CV
+
+document.getElementById('btnDescargar').addEventListener('click', function() {
+    // Ruta relativa al archivo PDF en tu carpeta de desarrollo
+    const pdfUrl = '/CV/CV-LauraNavarrete.pdf';
+    const fileName = 'CV-LauraNavarrete.pdf'; // nombre con que se guardará
+
+    // Crear enlace temporal
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = fileName;
+
+    // Agregar al DOM, disparar clic y luego remover
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});

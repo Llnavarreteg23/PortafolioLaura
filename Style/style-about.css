@@ -12,10 +12,15 @@
     font-weight: 400;
     margin-bottom: 50px;
     letter-spacing: 1px;
+    
 
 }
 .about-section .highlight {
     color: #a259f7;
+}
+
+.github{
+    margin-left: 20px;
 }
 .about-content {
     display: flex;

@@ -12,8 +12,9 @@
   color: #fff;
   font-size: 2.1rem;
   font-weight: 400;
-  margin-bottom: 38px;
+  margin-bottom: 45px;
   letter-spacing: 1px;
+  margin-top: -30px;
 }
   
 .portfolio-section .Portafolio-title {
@@ -40,7 +41,7 @@
   
 .portfolio-item img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover; 
 }
   
@@ -73,6 +74,65 @@
   background: #6c63ff;
 }
 
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  overflow: auto;
+}
+.modal-content {
+  background: #222;
+  margin: 40px auto;
+  padding: 32px 24px;
+  border-radius: 18px;
+  max-width: 540px;
+  width: 90vw;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.close {
+  color: #fff;
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close:hover { color: #8d7aff; }
+.btn-demo {
+  display: inline-block;
+  background:  #6b53f2;
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#modalTags .tag {
+  display: inline-block;
+  background: #2222ff22;
+  color: #8d7aff;
+  border: 1px solid #8d7aff;
+  border-radius: 6px;
+  padding: 3px 10px;
+  margin: 2px 4px 2px 0;
+  font-size: 1rem;
+}
+
+#modalTitle{
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
 /* Estilos adaptados en pantallas pequeñas */
 @media (max-width: 700px) {
   .portfolio-section {

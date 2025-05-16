@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="./style-nav.css">
-    <link rel="stylesheet" href="./style-home.css">
-    <link rel="stylesheet" href="./style-about.css">
-    <link rel="stylesheet" href="./style-skill.css">
-    <link rel="stylesheet" href="./style-portafolio.css">
-    <link rel="stylesheet" href="./style-contact.css">
-    <link rel="stylesheet" href="./style-footer.css">
+    <link rel="stylesheet" href="/Style/style-nav.css">
+    <link rel="stylesheet" href="/Style/style-home.css">
+    <link rel="stylesheet" href="/Style/style-about.css">
+    <link rel="stylesheet" href="/Style/style-skill.css">
+    <link rel="stylesheet" href="/Style/style-portafolio.css">
+    <link rel="stylesheet" href="/Style/style-contact.css">
+    <link rel="stylesheet" href="/Style/style-footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
 
-<!-- Sección: Nav -->
-    
-<header>
-    <nav>
-            <div class="nav-left">{LN}Laura Navarrete</div>
+<!--! Sección: Nav -->
+    <header>
+        <nav>
+            <div class="nav-left"><span class="logo">{LN}</span> Laura Navarrete</div>
             <div class="nav-right">
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Contacto</a>
-                <!--<a href="#">Idioma ▼</a>-->
+                <a href="#Home-section" data-i18n="home">Inicio</a>
+                <a href="#about-section" data-i18n="about">Acerca de</a>
+                <a href="#portfolio-section" data-i18n="projects">Proyectos</a>
+<!--               <a id="nav-idioma" href="#" data-i18n="language">Idioma ▼</a> --> 
             </div>
         </nav>
-</header>
+
+<!-- Menú de idioma oculto por defecto -->
+        <ul id="lang-menu" class="lang-menu" style="display:none;">
+            <li><a href="#" class="lang-option" data-lang="es">Español</a></li>
+            <li><a href="#" class="lang-option" data-lang="en">English</a></li>
+        </ul>
+    </header>
+
     
 
 <!--! Sección: Home -->
-<section class="Home-section">
-    <div class="container">
+    <section class="Home-section" id="Home-section">
+        <div class="container">
         <div class="row">
             <div class="col">
                 <div class="main-content">
@@ -47,30 +52,31 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
 
 <!--! Sección: Por qué contratarme? -->
 
-<section class="about-section" id="about-section">
-    <h2>¿Por qué contratarme para <span class="highlight">tu próximo proyecto?</span></h2>
-    <div class="about-content">
-        <div class="about-photo">
-            <img src="./Laura.jpg" alt="Foto de Laura Navarrete">
-        </div>
-        <div class="about-info">
-            <p>Soy una desarrolladora web fullstack junior con proyectos personales que evidencian mi potencial y mi deseo de contribuir activamente al éxito de tu próximo proyecto.</p>
-            <div class="about-buttons">
+    <section class="about-section" id="about-section">
+        <h2>¿Por qué contratarme para <span class="highlight">tu próximo proyecto?</span></h2>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="/Imagenes/Laura.jpeg" alt="Foto de Laura Navarrete">
+            </div>
+            <div class="about-info">
+                <p>Soy una desarrolladora web fullstack junior con proyectos personales que evidencian mi potencial y mi deseo de contribuir activamente al éxito de tu próximo proyecto.</p>
+                
+                <div class="about-buttons">
                     <button id="btnPortafolio">Portafolio</button>
-                    <button href="./CV-LauraNavarrete.pdf" download="./CV-LauraNavarrete.pdf">Descargar CV</button>
+                    <button id="btnDescargar">Descargar CV</button>
                 </div>
                 <div class="about-stats">
                     <div>
-                        <span class="stat-title">1 año</span><br>
+                        <span class="stat-title">6 meses</span><br>
                         <span class="stat-link">Experiencia</span>
                     </div>
-                    <div>
+                    <div class="github">
                         <span class="stat-title">+2 Proyectos</span><br>
                         <span class="stat-link">Github</span>
                     </div>
@@ -101,93 +107,93 @@
                         <li><i class="icon"></i>Figma</li>
                     </ul>
                 </div>
-                <div class="skills" id="skills-container">
+                
+                <div class="skills">
                     <h3>Habilidades</h3>
+                    <div  id="skills-container">
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección: Mi Portafolio -->
+    <!--! Sección: Mi Portafolio -->
     
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <section class="portfolio-section" id="portfolio-section">
-                <h2>Mi <span class="Portafolio-title">Portafolio</span></h2>
-                    <div class="portfolio">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <section class="portfolio-section" id="portfolio-section">
+            <h2>Mi <span class="Portafolio-title">Portafolio</span></h2>
+                <div class="portfolio">
 
-                        <div class="portfolio-item col-12 col-md-4 text-center">
-                            <img src="potafolio0.jpg" alt="Portafolio 0">
-                            <h3>Portafolio 0</h3>
-                            <div class="portfolio-buttons">
-                                <button>Demo</button>
-                                <button>Ver Más</button>
-                            </div>
+                    <div class="portfolio-item col-12 col-md-4 text-center">
+                        <img src="/Imagenes/Proyecto0.png" alt="Portafolio 0">
+                        <h3>Fit Nation</h3>
+                        <div class="portfolio-buttons">
+                            <button id="btnDemo0">Demo</button>
+                            <button class="btnviewMore" data-id="FitNation">Ver Más</button>
                         </div>
+                    </div>
 
-                        <div class="portfolio-item col-12 col-md-4 text-center">
-                            <img src="proyecto1.jpg" alt="proyecto">
-                            <h3>Proyecto 1</h3>
-                            <div class="portfolio-buttons">
-                                <button>Demo</button>
-                                <button>Ver Más</button>
-                            </div>
+                    <div class="portfolio-item col-12 col-md-4 text-center">
+                        <img src="/Imagenes/Proyecto1.png" alt="proyecto">
+                        <h3>HobbVerse</h3>
+                        <div class="portfolio-buttons">
+                            <button id="btnDemo1">Demo</button>
+                            <button class="btnviewMore" data-id="HobbVerse">Ver Más</button>
                         </div>
+                    </div>
 
-                        <div class="portfolio-item col-12 col-md-4 text-center">
-                            <img src="proyecto2.jpg" alt="Proyecto 2">
-                            <h3>Proyecto 2</h3>
-                            <div class="portfolio-buttons">
-                                <button>Demo</button>
-                                <button>Ver Más</button>
-                            </div>
+                    <div class="portfolio-item col-12 col-md-4 text-center">
+                        <img src="/Imagenes/Proyecto2.png" alt="Proyecto 2">
+                        <h3>Conversor de temperatura</h3>
+                        <div class="portfolio-buttons">
+                            <button id="btnDemo2">Demo</button>
+                            <button class="btnviewMore" data-id="ConversorT">Ver Más</button>
                         </div>
-            
-            
-        </div>
-        
+                    </div>
+
+                    <!-- Modal plantilla -->
+                    <div id="projectModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModal">&times;</span>
+                            <img id="modalImg" src="" alt="Project Screenshot" style="width:100%; border-radius:10px; margin-bottom:16px;">
+                            <h2 id="modalTitle"></h2>
+                            <p id="modalDesc"></p>
+                            <div id="modalTags" style="margin-bottom:16px;"></div>
+                            <a id="modalDemo" href="#" target="_blank" class="btn-demo">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    
-  
-            <!-- 
-            
-            
-          <div class="portfolio-item">
-                <img src="proyecto3.jpg" alt="Proyecto 3">
-                <h3>Proyecto 3</h3>
-                <div class="portfolio-buttons">
-                    <button>Demo</button>
-                    <button>Ver Más</button>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <img src="proyecto4.jpg" alt="Proyecto 4">
-                <h3>Proyecto 4</h3>
-                <div class="portfolio-buttons">
-                    <button>Demo</button>
-                    <button>Ver Más</button>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <img src="proyecto5.jpg" alt="Proyecto 5">
-                <h3>Proyecto 5</h3>
-                <div class="portfolio-buttons">
-                    <button>Demo</button>
-                    <button>Ver Más</button>
-                </div>
-            </div>
-            --> 
-
-        </div>
-    </section>
+</div>
 
     <!-- Sección: Contacto -->
     <section class="Contact-section"></section>
 
-    <footer></footer>
+    
+    <!--! Seccion footer -->
 
-    <script src="./script.js"></script>
+    <footer class="footer"></footer>
+        <div class="footer-icons">
+            <a href="#" class="footer-icon" data-url="https://github.com/Llnavarreteg23" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="footer-icon" data-url="https://www.linkedin.com/in/lauranavarrete-developerjava/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-icon" data-url="https://wa.me/573008681327" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <div class="footer-text">
+            © 2025 Laura Navarrete. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="/Script/script-nav.js"></script>
+    <script src="/Script/script-home.js"></script>
+    <script src="/Script/script-about"></script>
+    <script src="/Script/script-skill.js"></script>
+    <script src="/Script/script-portafolio.js"></script>
+    <script src="/Script/script-footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
